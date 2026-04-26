@@ -1,0 +1,69 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f5f7fa;
+}
+
+header {
+  background: #0a2540;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #133b5c;
+  text-align: center;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.whatsapp-btn {
+  display: block;
+  background: #25D366;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.floating-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+}
