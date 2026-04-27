@@ -17,7 +17,7 @@ const panneaux = [
 const onduleurs = [
   {
     name: "Onduleur 5 kVA",
-    image: "inverter1.jpg",
+    image: "Onduleur-triphasé-20kva.png",
     desc: "Hybride"
   }];
   function afficherProduits(liste, containerId) {
