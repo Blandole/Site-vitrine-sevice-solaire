@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Énergie Solaire</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
+  <img id="logo" src="logo service solaire.png">
   <h1>Solutions Énergie Solaire</h1>
+  <p>Batteries • Panneaux • Onduleurs</p>
 </header>
 
 <nav>
@@ -17,11 +19,14 @@
   <a href="#panneaux">Panneaux</a>
   <a href="#onduleurs">Onduleurs</a>
 </nav>
-<section class="hero">
-  <h2>Votre énergie, notre solution</h2>
-</section>
 
+<div class="promo-bar">
+  <div class="promo-content">
+    🔥 Offre spéciale : Livraison GRATUITE à Abidjan pour tout achat de batterie 🔋 • Profitez maintenant 🚚 • Contactez-nous sur WhatsApp 📲
+  </div>
+</div>
 <div class="container">
+
   <h2 id="batteries">Batteries</h2>
   <div id="batteries-list" class="grid"></div>
 
@@ -30,10 +35,81 @@
 
   <h2 id="onduleurs">Onduleurs</h2>
   <div id="onduleurs-list" class="grid"></div>
+
+</div>
+<!-- Zoom image -->
+<div id="imageModal" class="modal">
+  <span class="close">✖</span>
+  <img class="modal-content" id="zoomedImg">
 </div>
 
-<a class="floating-wa" href="https://wa.me/2250767567591">💬</a>
+<!-- Modal infos produit -->
+<div id="infoModal" class="modal">
+  <div class="modal-box">
+    <span class="close-info">✖</span>
+    <h2 id="info-title"></h2>
+    <p id="info-desc"></p>
+  </div>
+</div>
+
+<!-- Formulaire commande -->
+<div id="orderModal" class="modal">
+  <div class="modal-box">
+    <span class="close-order">✖</span>
+    <h2>Passer commande</h2>
+
+    <input type="text" id="nom" placeholder="Votre nom">
+    <input type="tel" id="numero" placeholder="Votre numéro">
+
+    <div id="produits-form"></div>
+
+    <button onclick="envoyerCommande()">Envoyer sur WhatsApp</button>
+  </div>
+</div>
+
+<a class="floating-wa" href="https://wa.me/2250151803055">💬</a>
 
 <script src="index.js"></script>
 </body>
+
+<footer>
+  <div class="footer-container">
+
+    <!-- Logo / Présentation -->
+    <div class="footer-section">
+      <h2 class="footer-logo">⚡ Énergie Solaire</h2>
+      <p>
+        Solutions fiables en batteries lithium, panneaux solaires et onduleurs.
+        Nous accompagnons vos projets énergétiques en Côte d'Ivoire.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-section">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#batteries">Batteries</a></li>
+        <li><a href="#panneaux">Panneaux</a></li>
+        <li><a href="#onduleurs">Onduleurs</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📞 +225 01 51 80 30 55</p>
+      <p>📍 Abidjan, Côte d'Ivoire</p>
+      <a class="footer-btn" href="https://wa.me/2250151803055" target="_blank">
+        💬 Discuter sur WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+  <!-- Bas du footer -->
+  <div class="footer-bottom">
+    <p>© 2026 Énergie Solaire | Tous droits réservés</p>
+  </div>
+</footer>
+
 </html>
