@@ -54,6 +54,7 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   height: 100%;
+  cursor: pointer;
 }
 
 .card img {
