@@ -9,10 +9,19 @@ header {
   font-size: 2rem;
 }
 
+header h1{
+  font-size: 1.8rem;
+}
+header p{
+  font-size: 1rem;
+}
+
 nav {
-  background:#133b5c;
-  text-align:center;
-  padding:10px;
+  display:flex;
+ justify-content: center;
+ flex-wrap: wrap;
+  gap:10px;
+  background-color: #03396e;
 }
 
 nav a {
@@ -34,15 +43,14 @@ nav a:hover{
 
 .grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,300px));
+  justify-content: center;
   gap:20px;
 }
 .card {
-  background:white;
   border-radius:10px;
   overflow:hidden;
   box-shadow:0 2px 8px rgba(0,0,0,0.1);
-
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -149,12 +157,13 @@ button:hover{
 }
 
 #logo{
-  width: 12%;
-  height: 22%;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
   position:absolute;
-  left: 2px;
-  top: 5px
+  left: 10px;
+  top: 10px;
+  object-fit: contain;
+ border-radius: 10px;
 }
 
 footer{
@@ -263,12 +272,12 @@ margin: 0 auto;
 }
 
 .promo-bar {
-  background: #25D366;
-  color: white;
+  background: #fc0303;
+  color: black;
   overflow: hidden;
   white-space: nowrap;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .promo-content {
@@ -284,4 +293,11 @@ margin: 0 auto;
   100% {
     transform: translateX(-100%);
   }
+}
+
+.container h2{
+  text-align: center;
+  background-color: #0a2540;
+  color: white;
+  padding: 5px;
 }
