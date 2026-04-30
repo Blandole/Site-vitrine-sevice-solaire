@@ -1,6 +1,6 @@
 const produits = {
   batteries: [
-    { id:"batt16", name:"Batterie 16kWh", image:"batterie-16kwh.png", desc:"Model: HFL-314\n Rated Volatge: 51.2V\n Capacity: 314Ah/16.07Kwh 6000 cycles\n garantie: 5 ans \n prix:1300.000 Franc CFA" },
+    { id:"batt16", name:"Batterie 16kWh", image:"Batterie-16kwh.png", desc:"Model: HFL-314\n Rated Volatge: 51.2V\n Capacity: 314Ah/16.07Kwh 6000 cycles\n garantie: 5 ans \n prix:1300.000 Franc CFA" },
   ],
   panneaux: [
     { id:"pan585", name:"Panneau 585w Sunrise", image:"585W.png", desc:"Marque: Sunrise \n Clsass: A \n Type: N TopCon Monocristallin \n garantie: 30 ans \n prix: 60.000 Franc CFA" },
