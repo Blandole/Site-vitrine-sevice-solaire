@@ -42,7 +42,7 @@ function afficherListe(liste, containerId){
           <h3>${p.name}</h3>
           <button class="info-btn" onclick="voirInfos('${p.id}')">+ infos</button>
         </div>
-        <button onclick="ouvrirCommande()" onclick="fbq('track', 'Contact')">Commander</button>
+        <button onclick="ouvrirCommande()">Commander</button>
       </div>
     `;
      container.appendChild(card);
