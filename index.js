@@ -42,7 +42,7 @@ function afficherListe(liste, containerId){
           <h3>${p.name}</h3>
           <button class="info-btn" onclick="voirInfos('${p.id}')">+ infos</button>
         </div>
-        <button onclick="ouvrirCommande()">Commander</button>
+        <button onclick="ouvrirCommande()" onclick="fbq('track', 'Contact')">Commander</button>
       </div>
     `;
      container.appendChild(card);
@@ -101,5 +101,5 @@ function envoyerCommande(){
     }
   });
 
-  window.open(`https://wa.me/2250767567591?text=${message}`);
+  window.open(`https://wa.me/2250151803055?text=${message}`);
 }
